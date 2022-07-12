@@ -19,4 +19,8 @@
     <ProjectReference Include="..\E_LEARNING.CORE\E_LEARNING.CORE.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Business\" />
+  </ItemGroup>
+
 </Project>

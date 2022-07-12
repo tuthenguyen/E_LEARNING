@@ -43,9 +43,15 @@ namespace E_LEARNING.CORE.BusinessDomain
         public int AccountId { get; set; }
 
         /// <summary>
+        /// Class Id
+        /// </summary>
+        public int ClassId { get; set; }
+
+        /// <summary>
         /// Refs
         /// </summary>
         public virtual Account Account { get; set; }
-        public virtual ScoreLearning ScoreLearning { get; set; }
+        public virtual ICollection<ScoreLearning> ScoreLearnings { get; set; }
+        public virtual Class Class { get; set; }
     }
 }

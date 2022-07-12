@@ -46,5 +46,6 @@ namespace E_LEARNING.CORE.BusinessDomain
         /// Refs
         /// </summary>
         public virtual Account Account { get; set; }
+        public virtual ICollection<ClassTeacherReference> ClassTeacherReferences { get; set; }
     }
 }

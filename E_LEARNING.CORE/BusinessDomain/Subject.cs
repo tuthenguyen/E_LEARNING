@@ -21,7 +21,7 @@ namespace E_LEARNING.CORE.BusinessDomain
         /// Refs
         /// </summary>
         public virtual ICollection<Class> Classes { get; set; }
-        public virtual ICollection<ScoreLearning> ScoreLearning { get; set; }
+        public virtual ICollection<ScoreLearning> ScoreLearnings { get; set; }
         public virtual ICollection<Test> Tests { get; set; }
     }
 }

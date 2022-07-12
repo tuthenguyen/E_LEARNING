@@ -51,6 +51,6 @@ namespace E_LEARNING.CORE.BusinessDomain
         /// Refs
         /// </summary>
         public virtual Class Class { get; set; }
-        public virtual ICollection<Teacher> Teachers { get; set; }
+        public virtual ICollection<ClassTeacherReference> ClassTeacherReferences { get; set; }
     }
 }

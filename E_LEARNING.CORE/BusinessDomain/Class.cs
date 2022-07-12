@@ -30,7 +30,7 @@ namespace E_LEARNING.CORE.BusinessDomain
         /// <summary>
         /// Status
         /// </summary>
-        public string Status { get; set; }
+        public bool Status { get; set; }
 
         /// <summary>
         /// Subject Id
@@ -39,7 +39,7 @@ namespace E_LEARNING.CORE.BusinessDomain
 
         //relationship
         public virtual ICollection<Student> Students { get; set; }
-        public virtual ClassDetail ClassDetail { get; set; }
+        public virtual ICollection<ClassDetail> ClassDetails { get; set; }
         public virtual Subject Subject { get; set; }
     }
 }

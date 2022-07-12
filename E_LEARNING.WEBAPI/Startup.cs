@@ -51,7 +51,7 @@ namespace E_LEARNING.WEBAPI
                }
            );
             services.AddJwtSetting();
-            //services.AddAuthorization();
+            services.AddAuthorization();
             //services.AddAutoMapper(typeof(MappingProfile));
             /* services
                  .AddControllers(options =>
