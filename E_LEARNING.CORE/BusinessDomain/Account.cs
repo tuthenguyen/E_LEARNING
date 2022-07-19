@@ -25,7 +25,7 @@ namespace E_LEARNING.CORE.BusinessDomain
         /// <summary>
         /// Gmail
         /// </summary>
-        public string Gmail { get; set; }
+        public string Email { get; set; }
 
         /// <summary>
         /// Phone

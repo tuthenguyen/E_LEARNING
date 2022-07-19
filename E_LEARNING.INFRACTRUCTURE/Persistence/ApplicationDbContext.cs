@@ -1,5 +1,6 @@
 ﻿using E_LEARNING.APPLICATION.Base.Interfaces;
 using E_LEARNING.CORE.Base;
+using E_LEARNING.CORE.BusinessDomain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using System;
@@ -25,6 +26,17 @@ namespace E_LEARNING.INFRACTRUCTURE.Persistence
             _currentUserService = currentUserService;
             _dateTime = dateTime;
         }
+
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+        public DbSet<Class> Classes { get; set; }
+        public DbSet<ClassDetail> ClassDetails { get; set; }
+        public DbSet<ClassTeacherReference> ClassTeacherReferences { get; set; }
+        public DbSet<ScoreLearning> ScoreLearnings { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Test> Tests { get; set; }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {

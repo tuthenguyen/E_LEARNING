@@ -19,7 +19,7 @@ namespace E_LEARNING.INFRACTRUCTURE.Persistence.Configurations
 
             builder.Property(e => e.Password).HasMaxLength(256);
 
-            builder.Property(e => e.Gmail).HasMaxLength(100);
+            builder.Property(e => e.Email).HasMaxLength(100);
 
             builder.Property(e => e.Phone).HasMaxLength(10);
 
